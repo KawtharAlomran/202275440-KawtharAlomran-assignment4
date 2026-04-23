@@ -1,0 +1,250 @@
+:root{
+  --bg: #EAE6F2;      /* Main background color of the page */
+  --bg2: white;        /* Secondary background color */
+  --surface: #5F3769; /* Color used for cards and sections */
+  --text: #2E1B35;     /* Primary text color */
+  --text2:#EAE6F2; /* Secondary text color */
+  --fill: #5F3769; /* fiiling color of some content */ 
+}
+
+/* to change the website to dark mode*/
+.dark-mode {
+    --bg: #2E1B35;      /* Dark purple background */
+    --bg2: #574e61; 
+    --surface: #3E2A47; /* Lighter purple */
+    --text: #EAE6F2;    /* Light text */
+    --text2: #EAE6F2;  
+    --fill: #574e61; 
+}
+
+/* General body styling */
+body {
+    background-color: var( --bg); /* Applies main background color */
+    color: var( --text); /* Sets default text color */
+    font-family: 'Times New Roman', Times, serif; /* Sets page font */
+    margin: 0;
+}
+
+/* Heading styling */
+h1{
+    font-size: 40px;
+    text-align: center; /* Centers the main heading */
+}
+h2{
+    font-size: 28px;
+    text-align: center; /* Centers the subheadings */
+}
+
+/* Section styling */
+section{ 
+    padding: 20px; /* Adds internal spacing inside each section */
+    max-width: 1100px; /* Limits the maximum width on large screens */
+    margin: 0 auto; /* Centers the section horizontally */
+}
+
+/* Header styling */
+header {
+    text-align: center; /* Centers all content inside the header */
+    padding: 20px; /* Adds space inside the header around its content */
+}
+/* Paragraph styling */
+p {
+    line-height: 1.6; /* Increasing line spacing to improve readability */
+    margin-bottom: 20px;  /* Adds space below each paragraph */
+}
+/* Button styling */
+button {
+    font-family: 'Times New Roman', Times, serif;
+    padding: 12px; /* Button inner spacing */
+    border-radius: 8px;  /* Rounds the corners */
+    border: none;  /* Removes default border */
+    cursor: pointer;    /* Shows pointer on hover */
+    font-size: 16px;
+    width: 100%;
+    max-width: 240px;   /* Keeps button from being too wide */
+    align-self: center;   /* Centers the button inside the form */
+    transition: opacity 0.2s ease; /* Add smooth opacity animation */
+    background-color: var( --bg2);
+    color: var( --text); 
+}
+/* Apply hover effect when the mouse moves over a button */
+button:hover {
+    opacity: 0.8; /* Slightly changes transparency when hovering */
+}
+
+/* Styling the greeting text */
+#greeting {
+  text-align: center;  /* Centers the greeting text */
+  font-size: 22px;
+  margin: 10px;   /* Adds space around the greeting */
+  font-weight:bold;
+  position: relative;  /* Allows us to use ::after for decorative line */
+}
+
+/* Creating a decorative line under the greeting */
+#greeting::after {
+  content: "";
+  display: block;  /* Makes it behave like a block element (new line) */
+  width: 130px; /* Length of the line */
+  height: 3px;  /* Thickness of the line */
+  background-color: var(--fill);
+  margin: 10px auto 0;
+  border-radius: 2px;  /* Slightly rounds the edges of the line */
+}
+/* Styling the timer */
+#timer {
+    text-align: center;
+    font-size: 18px;
+    margin: 10px;
+}
+
+/* Styling the these toggle button */
+#themeToggleBtn {
+    display: block;
+    padding: 6px 10px;
+    border-radius: 8px;
+    width: auto;
+    max-width: 100px;
+    background-color: var(--fill);
+    color: var(--text2);
+}
+
+/* Navigation links styled as buttons */
+nav a {
+    text-decoration: none;  /* Removes default underline from links */
+    background-color: var(--fill);   
+    color: var(--text2);               
+    padding: 8px 16px;  /* Adds space inside the button */   
+    border-radius: 16px;  /* Rounds the corners */             
+    margin: 8px;   /* Adds spacing between buttons */
+    display: inline-block; /* Allows padding and margin to work properly */
+    transition: opacity 0.2s ease; /* Makes the hover effect smooth */             
+}
+/* Hover effect for navigation buttons */
+nav a:hover {
+    opacity: 0.8; /* Slightly changes transparency when hovering */
+}
+
+/* Quete section */
+.quoteBox {
+    background-color: var(--surface);
+    color: var(--text2);
+    border-radius: 16px;
+    padding: 32px;
+    max-width: 900px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#quoteText {
+    font-size: 22px;
+    font-style: italic;
+    margin-bottom: 16px;
+}
+
+#quoteAuthor {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#quoteError {
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+
+/* About Me section*/
+
+/* Styling the short tagline text */
+#tagline{
+    font-size: 28px;
+    text-align: center;  /* Centers the tagline */
+}
+
+/* Styling the main paragraph in the About Me section */
+#aboutMeP{
+    background-color: var( --surface);
+    color:var( --text2);
+    border-radius: 16px;   /* Rounds the corners for a softer look */
+    padding: 24px;  /* Adds space inside the box around the text */
+}
+
+
+/* Projects section*/
+
+/* Container that holds all project cards */
+.projects-container { 
+    display: flex; /* Uses Flexbox layout */
+    flex-wrap: wrap;  /* Allows cards to move to the next line on small screens */
+    gap: 24px;  /* Adds space between project cards */
+    justify-content: center; /* Centers the cards horizontally */
+}
+
+/* Individual project card */
+.project { 
+    background-color: var( --surface);
+    color:var( --text2);
+    padding: 40px;  /* Adds internal spacing inside each card */
+    border-radius: 16px;  /* Rounds the corners */
+    flex: 1 1 260px;      /* Flexible width (min 260px, can grow and shrink) */
+    max-width: 520px;  /* Prevents cards from becoming too wide */   
+    width: auto; 
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Add smooth animation */
+}
+
+/* Apply hover effect when the mouse moves over a project card */
+.project:hover {
+    transform: translateY(-6px);  /* Slightly move the card upward*/
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2); /* Add a soft shadow under the card */
+}
+
+/* Styling project images */
+.project img { 
+    width: 100%;  /* Makes image fill the card width */
+    height: 250px;   
+    display: block; 
+    object-fit: contain;
+    background-color: var( --bg2); 
+    border-radius: 16px; /* Rounds the corners to match card corner rounding*/
+}
+
+
+/* Hiding the project description */
+.projectDescription{
+    display: none;
+}
+
+
+/* Contact section*/
+
+/* Form container styling */
+form {
+    box-sizing: border-box;   /* Makes padding part of the form width*/
+    display: flex;  /* Uses flexbox for form layout */
+    flex-direction: column; /* Stacks form elements vertically */
+    gap: 16px;   /* Adds spacing between fields */
+    background-color: var( --surface);
+    color:var( --text2);
+    border-radius: 16px;  /* Rounds the corners*/
+    width: 100%;   /* Form takes full available width */
+    max-width: 900px;   /* Limits form width on large screens */
+    margin: 20px auto;      /* Centers the form horizontally */
+    padding: 32px;     /* Adds inner spacing inside the form */
+}
+
+/* Input fields and textarea styling */
+input,
+textarea {
+    box-sizing: border-box;  /* Ensures width includes padding and border */
+    width: 100%; /* Fields fill the form width */
+    padding: 12px;
+    border: 1px solid var(--text);
+    border-radius: 8px; /* Rounded field corners */
+    font-family: inherit; /* Uses the same font as the page */
+    resize: vertical; /* Enables vertical resizing only */
+
+}
+textarea{
+    min-height: 100px;
+}

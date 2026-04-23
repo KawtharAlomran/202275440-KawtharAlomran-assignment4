@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Head -->
+<head>
+    <meta charset="UTF-8">
+    <!-- Ensures the website displays well on desktop, tablet, and mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
+    <title>Kawthar's Profile</title>
+
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="css/styles.css">
+
+     <!-- External JavaScript file -->
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Adding theme toggle button -->
+        <button id="themeToggleBtn">Dark Mode</button>
+        
+        <!-- Greeting message is filled dynamically using JavaScript -->
+        <p id="greeting"></p>
+        
+        <!-- Adding timer -->
+        <p id="timer">Time spent on this site: 00:00:00</p>
+
+        <!-- Welcoming phrase -->
+        <h1>Welcome to Kawthar's Profile</h1> 
+
+        <!-- Navigation (links to page sections) -->
+        <nav>
+            <a href="#quote">Quote</a>
+            <a href="#aboutMe">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav> 
+    </header>
+
+    <!-- Quote section-->
+    <section id="quote">
+        <h2>An Inspirational Quote for You!</h2>
+        <div class="quoteBox">
+            <p id="quoteText">Click the button to load a quote.</p>
+            <p id="quoteAuthor"></p>
+            <button id="anotherQuoteBtn">Another quote</button>
+            <p id="quoteError"></p>
+        </div>
+    </section>   
+    <!-- About Me section-->
+    <section id="aboutMe">
+        <h2>About Me</h2>
+        <p id="tagline">Software Developer</p>
+
+        <!-- Main description paragraph -->
+        <p id = "aboutMeP">
+            I am a Software Engineering student with a strong interest in designing clean, efficient, and user-friendly applications. 
+            I enjoy applying software design principles to build structured solutions and continuously enhancing my technical and problem-solving abilities. 
+            I am always eager to explore new technologies and expand my development expertise.
+        </p>
+    </section>
+
+    <!-- Projects section-->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-container">
+
+            <!-- The first project -->
+            <article class="project">
+                <!-- the project image-->
+                <img src="assets/images/Student Schedule Route Visualizer.jpg" alt="Student Schedule Route Visualizer">
+          
+                <!-- the project title-->
+                <h3>Student Schedule Route Visualizer</h3>
+
+                <!-- button that will show the project's details-->
+                <button class="showDetails">Show details</button>
+
+                <!-- the project description-->
+                <p class = "projectDescription"> A desktop application that processes Excel schedule data to visualize a student's 
+                    daily route between classes. The system dynamically filters courses by CRN and day,
+                    calculates travel distance, and draws the route manually on a campus map panel.</p>
+
+            </article>
+
+            <!-- The second project -->
+            <article class="project">
+                <!-- the project image-->
+                <img src="assets/images/File System Visualizer.jpg" alt="File System Visualizer">
+                
+                <!-- the project title-->
+                <h3>File System Visualizer</h3>
+                
+                <!-- button that will show the project's details-->
+                <button class="showDetails">Show details</button>
+
+                <!-- the project description-->
+                <p class = "projectDescription"> A desktop application that recursively traverses a selected directory and 
+                    visualizes its structure using the Composite and Strategy design patterns.
+                    The system calculates folder sizes dynamically and supports both Tree and Bar Chart visualizations.</p>
+                
+               
+            </article>
+        </div>
+    </section>
+
+    <!-- Contact section-->
+    <section id="contact">
+        <h2>Contact</h2>
+
+        <!-- Create the contact form-->
+        <form id="contactForm">
+            <label for="name">Name</label>
+            <input id="name" type="text" required>
+
+            <label for = "email">Email</label>
+            <input id = "email" type="email" required>
+
+            <label for = "message">Message</label>
+            <textarea id = "message" required></textarea>
+
+            <button type="submit">Send</button>
+            <p id="formMessage"></p>
+        </form>
+    </section>
+</body>
+</html>
