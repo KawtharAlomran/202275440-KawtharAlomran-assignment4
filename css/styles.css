@@ -136,18 +136,21 @@ nav a:hover {
     text-align: center;
 }
 
+/* Styling the qoute */
 #quoteText {
     font-size: 22px;
     font-style: italic;
     margin-bottom: 16px;
 }
 
+/* Author styling */
 #quoteAuthor {
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 20px;
 }
 
+/* Styling the error message */
 #quoteError {
     margin-top: 12px;
     font-weight: bold;
@@ -215,7 +218,6 @@ nav a:hover {
     display: none;
 }
 
-
 /* Contact section*/
 
 /* Form container styling */
@@ -247,4 +249,37 @@ textarea {
 }
 textarea{
     min-height: 100px;
+}
+
+/* Footer styling */
+footer {
+    background-color: var(--surface);
+    color: var(--text2);
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* Footer links styling */
+.footer-links a {
+    text-decoration: none;
+    color: var(--text);
+    background-color: var(--bg2);
+    padding: 10px 16px;
+    border-radius: 12px;
+    margin: 5px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: opacity 0.2s ease;
+}
+
+.footer-links a:hover {
+    opacity: 0.8;
+}
+
+/* Footer links icons */
+.footer-links img {
+    width: 20px;
+    height: 20px;
 }
