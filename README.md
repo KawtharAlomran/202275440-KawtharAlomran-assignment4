@@ -96,7 +96,7 @@ A detailed explanation of AI usage is available in `docs/ai-usage-report.md`.
 
 You can access the live version of the website here:
 
-https://kawtharalomran.github.io/202275440-KawtharAlomran-assignment4/s
+https://kawtharalomran.github.io/202275440-KawtharAlomran-assignment4/
 
 ## Conclusion
 
