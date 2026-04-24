@@ -5,6 +5,7 @@
   --text: #2E1B35;     /* Primary text color */
   --text2:#EAE6F2; /* Secondary text color */
   --fill: #5F3769; /* filling color of some content */ 
+  --clicked:  #5F3769; /* the color of clicked buttons */ 
 }
 
 /* to change the website to dark mode*/
@@ -15,6 +16,8 @@
     --text: #EAE6F2;    /* Light text */
     --text2: #EAE6F2;  
     --fill: #574e61; 
+    --clicked:  #EAE6F2; /* the color of clicked buttons */ 
+
 }
 
 /* General body styling */
@@ -173,6 +176,76 @@ nav a:hover {
     padding: 24px;  /* Adds space inside the box around the text */
 }
 
+/* Skills section */
+#skills {
+    text-align: center;
+}
+
+/* Filter buttons container */
+.skills-filter {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    gap: 24px; 
+}
+
+/* Filter buttons */
+.skill-filter-btn{
+    transition: transform 0.2s ease;
+}
+.skill-filter-btn:hover {
+    transform: translateY(-3px);
+}
+
+/* Active button */
+.skill-filter-btn.active {
+    background-color: var(--clicked);
+    color: var(--bg);
+}
+/* Skills container */
+.skills-container {
+    background-color: var(--surface);
+    color: var(--text2);
+    border-radius: 16px;
+    padding: 24px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+/* Animation */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Skill cards */
+.skill-card {
+    background-color: var(--surface);
+    color: var(--text2);
+    padding: 10px 18px;
+    border-radius: 20px;
+    font-size: 16px;
+    opacity: 0;
+    animation: fadeUp 0.4s ease forwards;
+}
+
+.skill-card:nth-child(1) { animation-delay: 0.1s; box-shadow: 0 0 10px var(--bg2)}
+.skill-card:nth-child(2) { animation-delay: 0.2s; box-shadow: 0 0 10px var(--bg2)}
+.skill-card:nth-child(3) { animation-delay: 0.3s; box-shadow: 0 0 10px var(--bg2)}
+.skill-card:nth-child(4) { animation-delay: 0.4s; box-shadow: 0 0 10px var(--bg2)}
+.skill-card:nth-child(5) { animation-delay: 0.5s; box-shadow: 0 0 10px var(--bg2)}
+.skill-card:nth-child(6) { animation-delay: 0.6s; box-shadow: 0 0 10px var(--bg2)}
+.skill-card:nth-child(7) { animation-delay: 0.7s; box-shadow: 0 0 10px var(--bg2)}
+.skill-card:nth-child(8) { animation-delay: 0.8s; box-shadow: 0 0 10px var(--bg2)}
 
 /* Projects section*/
 

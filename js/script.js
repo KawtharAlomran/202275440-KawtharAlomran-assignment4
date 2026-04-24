@@ -212,3 +212,35 @@ themeBtn.addEventListener("click", function() {
         themeBtn.textContent = "Dark Mode";
     }
 });
+
+// Skills filtering
+const skillFilterButtons = document.querySelectorAll(".skill-filter-btn");
+const skillCards = document.querySelectorAll(".skill-card");
+
+skillFilterButtons.forEach(function(button) {
+    button.addEventListener("click", function() {
+        const selectedCategory = button.getAttribute("data-category");
+
+        // Remove active class from all filter buttons
+        skillFilterButtons.forEach(function(btn) {
+            btn.classList.remove("active");
+        });
+
+        // Add active class to the selected button
+        button.classList.add("active");
+
+        // Show or hide skills based on selected category
+        skillCards.forEach(function(card) {
+            const cardCategories = card.getAttribute("data-category");
+
+            if (selectedCategory === "all" || cardCategories.includes(selectedCategory)) {
+                card.style.display = "block";
+                card.style.animation = "none";
+                card.offsetHeight;
+                card.style.animation = "";
+            } else {
+                card.style.display = "none";
+            }
+        });
+    });
+});
