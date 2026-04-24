@@ -69,7 +69,7 @@ form.addEventListener("submit", function(event) {
     const email = emailInput.value.trim();
     const message = messageInput.value.trim();
 
-    // Define email regex to check the validatiy of the entered email 
+    // Define email regex to check the validity of the entered email 
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     // Check if the name field is empty
@@ -136,7 +136,7 @@ async function loadQuote() {
         //fetch the 
         const response = await fetch("https://dummyjson.com/quotes/random");
 
-        // check the responce 
+        // check the response
         if (!response.ok) {
             throw new Error("Failed to fetch quote.");
         }
@@ -170,7 +170,7 @@ function updateTimer() {
     const minutes = Math.floor((secondsSpent % 3600)/ 60);
     const seconds = secondsSpent % 60;
 
-    // formate numbers to be at least 2 characters long, and add 0 at the beginning if it was less than 2 characters. 
+    // format numbers to be at least 2 characters long, and add 0 at the beginning if it was less than 2 characters. 
     const formattedHours = String(hours).padStart(2, "0");
     const formattedMinutes = String(minutes).padStart(2, "0");
     const formattedSeconds = String(seconds).padStart(2, "0");

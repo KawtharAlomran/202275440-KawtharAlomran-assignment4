@@ -4,7 +4,7 @@
   --surface: #5F3769; /* Color used for cards and sections */
   --text: #2E1B35;     /* Primary text color */
   --text2:#EAE6F2; /* Secondary text color */
-  --fill: #5F3769; /* fiiling color of some content */ 
+  --fill: #5F3769; /* filling color of some content */ 
 }
 
 /* to change the website to dark mode*/
@@ -125,7 +125,7 @@ nav a:hover {
     opacity: 0.8; /* Slightly changes transparency when hovering */
 }
 
-/* Quete section */
+/* Quote section */
 .quoteBox {
     background-color: var(--surface);
     color: var(--text2);
