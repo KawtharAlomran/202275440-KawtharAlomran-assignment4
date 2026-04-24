@@ -25,6 +25,7 @@ The website focuses on clean design, responsive layout, and interactive features
 - Visitor timer displaying time spent on the website in the format of hours:minutes:seconds
 - Light/Dark mode toggle with user preference saved using localStorage
 - Performance improvements including image optimization and clean code practices
+- Interactive skills section with filtering and animations
 
 ## Technologies Used
 
@@ -35,10 +36,13 @@ The website focuses on clean design, responsive layout, and interactive features
 ## Project Structure
 
 ```text
-202275440-KawtharAlomran-assignment3/
+202275440-KawtharAlomran-assignment4/
 ├── assets/
 │   └── images/
+│       └── email.png
 │       └── File System Visualizer.jpg
+│       └── github.png
+│       └── linkedin.png
 │       └── Student Schedule Route Visualizer.jpg
 ├── css/
 │   └── styles.css
@@ -47,6 +51,9 @@ The website focuses on clean design, responsive layout, and interactive features
 │   └── technical-documentation.md
 ├── js/
 │   └── script.js
+├── presentation/
+│   ├── demo-video.mp4
+│   └── slides.pdf
 ├── index.html
 └── README.md
 ```
@@ -69,6 +76,8 @@ To run the project locally:
 - Generate inspirational quotes using the quote button
 - Toggle between light and dark mode
 - Observe the timer
+- Use the skills filter to choose which type of skills you want to display 
+
 
 ## AI Usage Summary
 
@@ -82,6 +91,12 @@ ChatGPT was used as a support tool for:
 - Enhancing documentation quality
 
 A detailed explanation of AI usage is available in `docs/ai-usage-report.md`.
+
+## Deployed Application
+
+You can access the live version of the website here:
+
+https://kawtharalomran.github.io/202275440-KawtharAlomran-assignment4/s
 
 ## Conclusion
 
