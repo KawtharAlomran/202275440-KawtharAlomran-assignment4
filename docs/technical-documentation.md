@@ -19,8 +19,10 @@ The website is divided into clear semantic sections:
 - **Header** → Contains the dynamic greeting message, main title, theme toggle button, timer and navigation menu.
 - **Quote Section** → Displays dynamically fetched inspirational quotes from an external API.
 - **About Me Section** → Includes a short introduction and tagline.
+- **Skills Section** → Displays an interactive skills list with filtering functionality.
 - **Projects Section** → Displays project cards using `<article>` elements.
 - **Contact Section** → Contains a form with Name, Email, and Message fields.
+- **Footer Section** → Contains contact links such as email, GitHub, and LinkedIn.
 
 Semantic HTML elements such as `<header>`, `<section>`, `<article>`, and `<nav>` were used to improve structure and readability.
 
@@ -39,6 +41,7 @@ Key techniques used:
 - A dark mode theme using CSS variables and a `.dark-mode` class
 
 The website was tested using browser resizing and developer tools to ensure proper display on desktop, tablet, and mobile devices.
+The website was also deployed using GitHub Pages and tested on real devices, including mobile and iPad, to ensure proper responsiveness and functionality.
 
 ## 4. JavaScript Interactivity
 
@@ -93,6 +96,13 @@ The JavaScript file is loaded using the `defer` attribute to ensure all HTML ele
 - Stores user preference in `localStorage`
 - Loads saved theme when the page is reloaded
 
+### Skills Section Filtering
+- An interactive skills section was implemented to improve user engagement.
+- Skills are categorized using custom `data-category` attributes.
+- JavaScript is used to display skills based on the selected category.
+- The active filter button is updated dynamically to show the current selection.
+- CSS animations are applied when skills appear to improve visual feedback and user experience.
+
 ## 5. Animations and Transitions
 
 Simple animations and transitions were added using CSS to improve user interaction and visual feedback.
@@ -100,6 +110,7 @@ Simple animations and transitions were added using CSS to improve user interacti
 - Hover effects were applied to project cards using `transform` and `box-shadow`
 - Buttons use an opacity change on hover to indicate interactivity
 - Navigation links include smooth opacity transitions
+- Simple animations were added to the skills section to improve visual feedback when displaying filtered content.
 
 All animations use `transition` to ensure smooth and non-distracting effects.
 
@@ -124,6 +135,7 @@ This ensures that users are always informed about what is happening and what act
 - Consistent spacing and rounded corners were applied for a modern appearance.
 - Color variables were used to maintain theme consistency.
 - A dark mode option was included to improve accessibility and user preference flexibility.
+- The skills section was designed with a filtering system to organize content and improve usability, allowing users to focus on specific categories.
 
 ## 8. User Experience
 
@@ -135,6 +147,8 @@ Users are guided clearly through both navigation and interaction:
 - Each project includes a "Show details" button that enables users to interactively view additional information.
 - Hover effects on buttons and interactive elements provide visual feedback, indicating that elements are clickable.
 - The contact form includes clearly labeled input fields to improve usability and accessibility.
+- The skills section allows users to filter content dynamically, providing a more interactive and personalized browsing experience.
+- The footer provides quick access to external contact links, improving accessibility and navigation.
 
 Clear feedback is provided during user interaction:
 
