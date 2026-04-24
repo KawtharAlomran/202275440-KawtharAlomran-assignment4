@@ -20,6 +20,8 @@ It was used for:
 - Explaining how to use localStorage to store and retrieve user preferences (light/dark mode).
 - Guiding the implementation of a timer to track and display time spent on the website.
 - Providing support in understanding performance testing tools such as Lighthouse and interpreting results.
+- Guiding the implementation of custom data attributes to dynamically filter content based on user selection.
+- Providing guidance for adding animation effects to enhance user experience when displaying skills.
 
 AI assistance was primarily used as a learning and support tool rather than as a direct code generator.
 
@@ -33,6 +35,7 @@ Using AI tool provided several benefits, including:
 - Improved clarity and quality of code comments.
 - Assistance in implementing interactive features more efficiently.
 - Helped in understanding and implementing more advanced features such as API integration and state management.
+- Helped in designing and implementing an interactive skills filtering feature.
 
 
 Although AI was helpful, there were some limitations:
@@ -55,7 +58,8 @@ Through the use of AI in this assignment, I learned:
 - How to manage application state using localStorage.
 - How to implement timers and work with time-based logic in JavaScript.
 - How to evaluate website performance using Lighthouse.
-
+- How to implement dynamic filtering using JavaScript and data attributes.
+- How to add simple animations to improve user interaction.
 
 ## Responsible Use & Modifications
 
